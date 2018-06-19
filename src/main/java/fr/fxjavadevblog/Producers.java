@@ -20,6 +20,7 @@ public class Producers
      * produces the instance of entity manager for the application and for DeltaSpike.
      */
     @Produces
+    @SuppressWarnings("unused") // just remove the warning, because the field serves as CDI Producer and the IDE cannot detect it.
     private static EntityManager em = Persistence.createEntityManagerFactory(UNIT_NAME).createEntityManager();
 
     /**
