@@ -4,8 +4,8 @@
 	<groupId>fr.fxjavadevblog</groupId>
 	<artifactId>cdi-deltaspike-demo</artifactId>
 	<version>1.0-SNAPSHOT</version>
-	<name>Simple Java 8 Application</name>
-	<description>Simple Java 8 Application</description>
+	<name>CDI DeltaSpike Demo</name>
+	<description>Simple CDI 2.0 + DeltaSpike 1.8 + JUnit 5 + JPA 2.2 Demo</description>
 
 
 	<properties>
