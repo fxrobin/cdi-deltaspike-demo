@@ -4,15 +4,14 @@ import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.inject.Produces;
 import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
+import java.util.UUID;
 
 @ApplicationScoped
-public class EntityManagerProducer {
+public class Producers {
 
-    private static EntityManager em = Persistence.createEntityManagerFactory("cdi-deltaspike-demo").createEntityManager();
+    public static final String UNIT_NAME = "cdi-deltaspike-demo";
 
     @Produces
-    public EntityManager getEntityManager()
-    {
-        return em;
-    }
+    private static EntityManager em = Persistence.createEntityManagerFactory(UNIT_NAME).createEntityManager();
+
 }

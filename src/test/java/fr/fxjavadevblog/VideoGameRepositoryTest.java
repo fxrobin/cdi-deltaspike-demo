@@ -11,7 +11,7 @@ import javax.inject.Inject;
 
 @Slf4j
 @EnableWeld
-class SimpleTest {
+class VideoGameRepositoryTest {
 
 	@WeldSetup // This is need to discovery DeltaSpike functionnalities
 	public WeldInitiator weld = WeldInitiator.performDefaultDiscovery();
