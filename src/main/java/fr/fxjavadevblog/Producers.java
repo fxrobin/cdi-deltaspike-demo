@@ -31,6 +31,7 @@ public class Producers
      */
     @Produces
     @InjectedUUID
+    @SuppressWarnings("unused") // just remove the warning, because the method serves as CDI Producer and the IDE cannot detect it.
     public String produceUUIDAsString()
     {
         return UUID.randomUUID().toString();
