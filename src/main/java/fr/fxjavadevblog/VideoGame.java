@@ -16,6 +16,7 @@ import java.io.Serializable;
 // lombok annotations
 @NoArgsConstructor(access = AccessLevel.PROTECTED) // to avoid direct instanciation bypassing the factory.
 @ToString(of = {"id","name"})
+@EqualsAndHashCode(of="id")
 
 // CDI Annotation
 @Dependent
